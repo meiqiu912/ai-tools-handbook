@@ -1,19 +1,78 @@
 <!DOCTYPE html>
-<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI工具实战手册（100+免费工具清单 + 50个提示词模板）</title>
-<style>body{font-family:system-ui;max-width:720px;margin:0 auto;padding:24px;background:#f6f7f9;color:#23272e}
-.card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,.08)}
-.price{font-size:32px;color:#c26a1b;font-weight:700}
-.btn{display:inline-block;background:#1e5eff;color:#fff;padding:15px 40px;border-radius:10px;text-decoration:none;margin-top:18px;font-size:17px;font-weight:600}
-ul{line-height:1.9} .note{color:#888;font-size:13px;margin-top:22px;border-top:1px dashed #ddd;padding-top:14px;line-height:1.7}</style>
-</head><body><div class="card">
-<h1>AI工具实战手册（100+免费工具清单 + 50个提示词模板）</h1><p>一份让你3天用上AI的实操指南，不吹概念只给能直接用的东西。包含：100+真实免费AI工具分类清单（写作/绘图/视频/办公/编程全覆盖，每个标注免费额度，避免被割韭菜）、50个高频提示词模板（直接复制改参数就能用）、8大平台免费额度获取指南、3个AI提效实战工作流。购买后免费获取后续更新版本。</p>
-<h3>你将获得</h3><ul><li>100+免费AI工具分类清单，每个标注免费额度，拒绝被割韭菜</li>
-<li>50个高频提示词模板，复制改参数直接用，写作/办公/学习全覆盖</li>
-<li>8大平台免费额度获取指南，白嫖合规技巧</li>
-<li>3个AI提效实战工作流，从0到1完整跑一遍</li>
-<li>限时9.9元（原价99元），购买后免费获取后续更新版本</li></ul>
-<div class="price">¥9.9</div>
-<a class="btn" href="https://openapi.alipay.com/gateway.do?app_id=2021006113692045&method=alipay.trade.page.pay&charset=UTF-8&sign_type=RSA2&timestamp=2026-08-02%2004%3A31%3A23&version=1.0&biz_content=%7B%22out_trade_no%22%3A%22AG202608020431238D1240%22%2C%22total_amount%22%3A%229.90%22%2C%22subject%22%3A%22AI%E5%B7%A5%E5%85%B7%E5%AE%9E%E6%88%98%E6%89%8B%E5%86%8C%EF%BC%88100%2B%E5%85%8D%E8%B4%B9%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95%20%2B%2050%E4%B8%AA%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%A8%A1%E6%9D%BF%EF%BC%89%22%2C%22product_code%22%3A%22FAST_INSTANT_TRADE_PAY%22%7D&sign=BBOkmRvLS2HE97VwjxVoKeAB2a1axSwSBRuBoQ9tYhIceWkyJimJTXanDWSx7J6FFFpTRZc4o2Bo0Lp0kcCImWBYVI11Z2iRiIO9AWRW70MmrIm5HakRxFDPf06gq%2BIG0UrOp0s%2B1PcGvbjSBT87eLee1ifmhpyPrRtXzfaKZUFIQaNlmShhiG7tOsHu7m70vclP%2FjY3sgn0WT%2BB9O6R8zrLbZ6hfHGVhe7DzxjpuUJXLp9YLkRYOdTvyUFgdhlcHkv%2B6oivUXoxbffK2T4t4g2qzb2UcffAud4gsWkHJFK3F7Tyqm0xkzRbSoBslRyP8ocpqDh7YOKSguKBuHSRJw%3D%3D" rel="nofollow">立即购买</a>
-<p class="note">付款后系统自动发送手册下载链接到你的邮箱，24小时内到账，永久有效<br>订单号：AG202608020431238D1240（支付遇到问题可联系客服）</p>
-</div></body></html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI工具实战手册：100+免费AI工具清单 + 50个提示词模板（限时¥9.9）</title>
+<style>
+body{font-family:system-ui,-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;max-width:760px;margin:0 auto;padding:24px;background:#f5f7fa;color:#1f2733}
+.card{background:#fff;border-radius:16px;padding:32px;box-shadow:0 6px 24px rgba(0,0,0,.08);margin-bottom:20px}
+.tag{display:inline-block;background:#ff6b35;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:1px}
+h1{font-size:26px;line-height:1.4;margin:14px 0 8px}
+.sub{color:#5a6472;font-size:15px;line-height:1.8;margin-bottom:6px}
+.price-row{display:flex;align-items:baseline;gap:12px;margin:20px 0 6px}
+.price-old{font-size:20px;color:#9aa3af;text-decoration:line-through}
+.price-now{font-size:42px;color:#e6392e;font-weight:800}
+.price-note{color:#e6392e;font-size:14px;font-weight:600}
+.countdown{background:#fff3f0;border:1px dashed #ffb4a0;border-radius:8px;padding:8px 14px;font-size:13px;color:#c0392b;margin:10px 0 4px;display:inline-block}
+ul{line-height:2;padding-left:22px}
+ul li{margin-bottom:4px}
+.bigbtn{display:block;text-align:center;background:linear-gradient(135deg,#ff5e3a,#e6392e);color:#fff;padding:18px;border-radius:12px;text-decoration:none;font-size:19px;font-weight:800;margin:22px 0 8px;box-shadow:0 6px 18px rgba(230,57,46,.35)}
+.bigbtn:hover{filter:brightness(1.08)}
+.secure{text-align:center;color:#8a94a3;font-size:13px;margin-bottom:8px}
+.why{background:#f0f7ff;border-radius:12px;padding:18px 22px;margin:16px 0}
+.why b{color:#1e5eff}
+.faq{background:#f8f9fb;border-radius:12px;padding:16px 22px;margin-top:16px}
+.faq details{margin:10px 0}
+.faq summary{font-weight:600;cursor:pointer;color:#33404f}
+.faq p{font-size:14px;color:#5a6472;margin:6px 0 0}
+.note{color:#8a94a3;font-size:12px;margin-top:18px;border-top:1px dashed #d8dee6;padding-top:14px;line-height:1.7}
+.stars{color:#f5a623;letter-spacing:2px;font-size:14px}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <span class="tag">🔥 限时特价</span>
+  <h1>AI工具实战手册：100+免费AI工具清单 + 50个提示词模板</h1>
+  <p class="sub">收藏了几十个AI工具却从没用起来？跟AI对话总是得不到想要的答案？怕被割韭菜又舍不得付费？<b>这份手册帮你一次性解决——只给能直接用的东西，不吹概念。</b></p>
+
+  <div class="price-row">
+    <span class="price-old">原价 ¥99</span>
+    <span class="price-now">¥9.9</span>
+    <span class="price-note">限时 3 折 · 仅剩最后几份</span>
+  </div>
+  <div class="countdown">⏰ 活动结束后恢复 ¥99，现在买立省 ¥89.1</div>
+
+  <a class="bigbtn" href="#buy">🛒 立即购买 ¥9.9</a>
+  <div class="secure">✔ 支付宝安全支付 ✔ 付款后自动发到邮箱 ✔ 一次购买永久免费更新</div>
+
+  <h3 style="margin-top:26px">📦 你将获得（实物交付，不是空头支票）</h3>
+  <ul>
+    <li><b>100+ 真实免费AI工具分类清单</b>：写作/绘图/视频/办公/编程全覆盖，每个工具标注免费额度，帮你避坑不被割韭菜</li>
+    <li><b>50 个可直接复制的高频提示词模板</b>：写作/办公/学习/营销/编程/生活六大场景，改个参数就能用，效果立竿见影</li>
+    <li><b>免费额度获取指南</b>：各大平台合规白嫖技巧，不花一分钱用上付费级AI功能</li>
+    <li><b>3 个完整AI提效工作流</b>：从0到1实操演示，把AI真正变成你的生产力</li>
+    <li><b>永久免费更新</b>：手册持续迭代，后续新增工具清单和模板自动推送</li>
+  </ul>
+
+  <div class="why">
+    <b>为什么只要 ¥9.9？</b> 一杯奶茶钱，换一个能反复用一年的AI提效工具库。你花10分钟随便搜的碎片信息，可能根本不全、可能是过时的；这份手册已经把 100+ 工具和 50 个模板<b>整理好、验证过、可直接用</b>。省下的是你 3-5 天的搜集时间，和无数个"收藏即吃灰"的夜晚。
+  </div>
+
+  <div class="faq">
+    <b style="color:#33404f">❓ 常见问题</b>
+    <details><summary>付款后怎么拿到手册？</summary><p>付款成功后系统会自动把手册发到你填写的邮箱，通常几分钟内到账；没收到可加邮箱 monika.seller@gmail.com 补发。</p></details>
+    <details><summary>手册里的工具真的免费吗？</summary><p>我们逐一核对了每个工具的免费额度与限制，标注得清清楚楚，避免你被"免费试用"套路。</p></details>
+    <details><summary>我是新手，用得上吗？</summary><p>完全没问题。手册从最基础的"怎么跟AI说话"开始，附赠3个从0到1的工作流，照着做就能上手。</p></details>
+    <details><summary>以后更新还要再付费吗？</summary><p>不用。一次购买，永久免费获取后续更新版本。</p></details>
+  </div>
+
+  <div class="note">
+    ⚠️ 限时特价随时可能结束，结束后恢复 ¥99。你现在花 ¥9.9 买到的，是别人 ¥99 才能拿到的完整版。<br>
+    本手册为数字产品，付款即发货，虚拟商品一经售出概不退款（内容质量问题可在购买后48小时内联系补发/修订）。
+  </div>
+</div>
+
+</body>
+</html>
